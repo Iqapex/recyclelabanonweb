@@ -72,7 +72,7 @@ const Partners = () => {
         <button
           id="join-us"
           onClick={handleClick}
-          className="bg-green-600 cursor-pointer text-white px-8 py-3 rounded-md hover:bg-green-700 transition-colors"
+          className="bg-yellow-600 cursor-pointer text-white px-8 py-3 rounded-md hover:bg-white-700 transition-colors"
         >
           Become a Partner
         </button>

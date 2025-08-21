@@ -18,7 +18,7 @@ const JoinUs = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="max-w-md w-full mx-4 bg-white rounded-xl shadow-lg p-8 text-center">
-          <Heart className="h-12 w-12 text-green-600 mx-auto mb-6" />
+          <Heart className="h-12 w-12 text-yellow-600 mx-auto mb-6" />
           <h2 className="text-2xl font-bold mb-4">Thank You for Your Interest!</h2>
           <p className="text-gray-600 mb-6">
             {activeTab === 'careers' && 'Our recruitment team will review your application and contact you soon.'}
@@ -27,7 +27,7 @@ const JoinUs = () => {
           </p>
           <button
             onClick={() => setShowSuccess(false)}
-            className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+            className="bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors"
           >
             Return to Join Us
           </button>
@@ -38,7 +38,7 @@ const JoinUs = () => {
 
   return (
     <div id="join-us" className="min-h-screen bg-gray-100">
-      <section className="py-24 bg-green-100">
+      <section className="py-24 bg-yellow-100">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">Join Our Mission</h1>
@@ -59,7 +59,7 @@ const JoinUs = () => {
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex items-center px-6 py-3 rounded-lg transition-colors ${
                   activeTab === tab.id
-                    ? 'bg-green-600 text-white'
+                    ? 'bg-yellow-600 text-white'
                     : 'bg-white text-gray-600 hover:bg-gray-50'
                 }`}
               >

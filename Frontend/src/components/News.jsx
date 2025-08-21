@@ -21,7 +21,7 @@ const News = ({ news }) => {
                 {item.title}
               </h3>
               <p className="text-gray-600 line-clamp-3">{item.description}</p>
-              <button className="mt-4 text-green-600 font-medium hover:text-green-700 transition-colors">
+              <button className="mt-4 text-yellow-600 font-medium hover:text-yellow-700 transition-colors">
                 Read more →
               </button>
             </div>

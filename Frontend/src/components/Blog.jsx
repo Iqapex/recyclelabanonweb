@@ -34,7 +34,7 @@ const Blog = () => {
         <button
           onClick={() => setFilter('All')}
           className={`px-4 py-2 mr-2 rounded-full ${
-            filter === 'All' ? 'bg-green-600 text-white' : 'bg-gray-200 hover:bg-gray-300'
+            filter === 'All' ? 'bg-yellow-600 text-white' : 'bg-gray-200 hover:bg-gray-300'
           }`}
         >All</button>
         {categories.map(cat => (
@@ -42,7 +42,7 @@ const Blog = () => {
             key={cat}
             onClick={() => setFilter(cat)}
             className={`px-4 py-2 mr-2 rounded-full ${
-              filter === cat ? 'bg-green-600 text-white' : 'bg-gray-200 hover:bg-gray-300'
+              filter === cat ? 'bg-yellow-600 text-white' : 'bg-gray-200 hover:bg-gray-300'
             }`}
           >{cat}</button>
         ))}
@@ -64,7 +64,7 @@ const Blog = () => {
               />
               <div className="p-6">
                 <div className="flex items-center mb-3">
-                  <span className="text-xs font-semibold px-2 py-1 bg-green-100 text-green-800 rounded-full">
+                  <span className="text-xs font-semibold px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full">
                     {blog.category || 'General'}
                   </span>
                   <span className="text-xs text-gray-500 ml-3">
@@ -77,7 +77,7 @@ const Blog = () => {
                   <span className="text-sm text-gray-500">By {blog.author}</span>
                   <Link
                     to={`/blog/${blog.slug}`}
-                    className="text-green-600 font-medium hover:text-green-700"
+                    className="text-yellow-600 font-medium hover:text-yellow-700"
                   >Read more →</Link>
                 </div>
               </div>

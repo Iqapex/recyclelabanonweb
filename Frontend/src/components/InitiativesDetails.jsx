@@ -214,7 +214,7 @@ const InitiativesDetails = () => {
       <div className="flex flex-col md:flex-row gap-8 mt-16">
         {/* Main content (60-70% width) */}
         <div className="md:w-4/5">
-          <h1 className="text-3xl font-bold text-green-800 mb-6">{program.title}</h1>
+          <h1 className="text-3xl font-bold text-yellow-800 mb-6">{program.title}</h1>
           
           <div className="mb-8">
             <img 
@@ -227,11 +227,11 @@ const InitiativesDetails = () => {
           <div className="prose max-w-none mb-8" dangerouslySetInnerHTML={{ __html: program.longDescription }} />
           
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold text-green-700 mb-4">Accomplishments</h2>
+            <h2 className="text-2xl font-semibold text-yellow-700 mb-4">Accomplishments</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {program.accomplishments.map((item, index) => (
-                <div key={index} className="bg-green-50 p-4 rounded-lg">
-                  <p className="font-bold text-green-700">{item.value}</p>
+                <div key={index} className="bg-yelloe-50 p-4 rounded-lg">
+                  <p className="font-bold text-yellow-700">{item.value}</p>
                   <p className="text-sm text-gray-600">{item.label}</p>
                 </div>
               ))}
@@ -240,11 +240,11 @@ const InitiativesDetails = () => {
           
           {program.callToActions.length > 0 && (
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold text-green-700 mb-4">Call to Actions</h2>
+              <h2 className="text-2xl font-semibold text-yelloe-700 mb-4">Call to Actions</h2>
               <div className="space-y-2">
                 {program.callToActions.map((item, index) => (
                   <div key={index} className="flex items-start">
-                    <span className="inline-block bg-green-100 text-green-800 rounded-full px-3 py-1 text-sm font-semibold mr-3">
+                    <span className="inline-block bg-yelloe-100 text-green-800 rounded-full px-3 py-1 text-sm font-semibold mr-3">
                       {index + 1}
                     </span>
                     <p>
@@ -335,7 +335,7 @@ const InitiativesDetails = () => {
       <div className="mt-12 text-center">
         <Link 
           to="/initiatives" 
-          className="inline-flex items-center gap-2 px-6 py-3 text-green-600 hover:text-green-700 hover:underline font-medium transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 text-yellow-600 hover:text-yellow-700 hover:underline font-medium transition-colors"
         >
           <svg 
             className="w-5 h-5" 

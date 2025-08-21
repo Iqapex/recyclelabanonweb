@@ -67,7 +67,7 @@ const Initiatives = () => {
                 
                 <Link 
                   to={`/initiatives/${program.id}`}
-                  className="inline-flex items-center text-green-600 hover:text-green-700 hover:underline font-medium gap-2 transition-colors"
+                  className="inline-flex items-center text-yellow-600 hover:text-yellow-700 hover:underline font-medium gap-2 transition-colors"
                 >
                   <span>Explore Initiative</span>
                   <svg 

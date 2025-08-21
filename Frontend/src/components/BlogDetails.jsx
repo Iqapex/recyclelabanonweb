@@ -42,7 +42,7 @@ const NewsDetail = () => {
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
           {error || 'News article not found'}
         </div>
-        <Link to="/news" className="mt-4 inline-block text-blue-600 hover:underline">
+        <Link to="/news" className="mt-4 inline-block text-yellow-600 hover:text-yellow-800">
           ← Back to all news
         </Link>
       </div>
@@ -51,7 +51,7 @@ const NewsDetail = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <Link to="/news" className="text-green-600 hover:text-green-800 mb-4 inline-block">
+      <Link to="/news" className="text-yellow-600 hover:text-yellow-800 mb-4 inline-block">
         ← Back to all news
       </Link>
       
@@ -64,7 +64,7 @@ const NewsDetail = () => {
         
         <div className="p-6 md:p-8">
           <div className="flex flex-wrap items-center mb-4">
-            <span className="text-sm font-semibold px-3 py-1 bg-green-100 text-green-800 rounded-full mr-3">
+            <span className="text-sm font-semibold px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full mr-3">
               {news.category || 'General'}
             </span>
             <span className="text-sm text-gray-500">

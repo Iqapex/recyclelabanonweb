@@ -24,7 +24,7 @@ const Contact = () => {
     {
       id: 1,
       name: "Regenerate Hub",
-      color: "green",
+      color: "yellow",
       location: [
         "Saint Louise Street,",
         "Corner Facing Edisson Roastery,",
@@ -38,7 +38,7 @@ const Contact = () => {
     {
       id: 2,
       name: "EcoSouk Circular Hub",
-      color: "green",
+      color: "yellow",
       location: [
         "Makdassi St, Anwar Al Khalil Bldg,",
         "Corner Facing Edisson Roastery,",
@@ -52,7 +52,7 @@ const Contact = () => {
     {
       id: 3,
       name: "TerraPods",
-      color: "green",
+      color: "yellow",
       location: ["Hay EI Ghabe, Baskinta,", "Metn, Beirut, Lebanon"],
       phone: "+961 76 009 44",
       email: "connect@terrapods.org",
@@ -72,7 +72,7 @@ const Contact = () => {
       setSuccessMessage("Your message has been sent successfully! 🎉");
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => {
-        setSuccessMessage(""); // Clear the success message after 3 seconds
+        setSuccessMessage(""); // Clear after 3s
       }, 3000);
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -91,13 +91,12 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12">
-          {/* Left Side - About & Information */}
+          {/* Left Side */}
           <div className="lg:w-1/2 space-y-12">
-            {/* About Section with SVG */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-center gap-4 mb-6">
-                <div className="p-3 bg-green-100 rounded-lg">
-                  <Leaf className="w-8 h-8 text-green-600" />
+                <div className="p-3 bg-yellow-100 rounded-lg">
+                  <Leaf className="w-8 h-8 text-yellow-600" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">About Us</h2>
               </div>
@@ -107,28 +106,28 @@ const Contact = () => {
                 circular economy that benefits both people and the planet.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <div className="text-center p-4 bg-green-50 hover:bg-green-100 rounded-xl">
-                  <Clock className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                <div className="text-center p-4 bg-yellow-50 hover:bg-yellow-100 rounded-xl">
+                  <Clock className="w-8 h-8 text-yellow-600 mx-auto mb-3" />
                   <h3 className="font-semibold mb-1">Working Hours</h3>
                   <p className="text-sm text-gray-600">Mon-Fri: 9AM - 6PM</p>
                 </div>
-                <div className="text-center p-4 bg-green-50 hover:bg-green-100 rounded-xl">
-                  <MapPin className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                <div className="text-center p-4 bg-yellow-50 hover:bg-yellow-100 rounded-xl">
+                  <MapPin className="w-8 h-8 text-yellow-600 mx-auto mb-3" />
                   <h3 className="font-semibold mb-1">Our locations</h3>
                   <p className="text-sm text-gray-600">Beirut, Lebanon</p>
                 </div>
-                <div className="text-center p-4 bg-green-50 hover:bg-green-100 rounded-xl">
-                  <Phone className="w-8 h-8 text-green-600 mx-auto mb-3" />
+                <div className="text-center p-4 bg-yellow-50 hover:bg-yellow-100 rounded-xl">
+                  <Phone className="w-8 h-8 text-yellow-600 mx-auto mb-3" />
                   <h3 className="font-semibold mb-1">Contact</h3>
                   <p className="text-sm text-gray-600">+961 1 123 456</p>
                 </div>
               </div>
             </div>
 
-            {/* Information Cards */}
+            {/* Info Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2">
               <div className="bg-white rounded-xl shadow-lg p-6 min-w-0">
-                <h3 className="font-semibold mb-3 text-green-600">
+                <h3 className="font-semibold mb-3 text-yellow-600">
                   <Mail className="w-5 h-5 inline-block mr-2" />
                   Email Us
                 </h3>
@@ -137,7 +136,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="font-semibold mb-3 text-green-600">
+                <h3 className="font-semibold mb-3 text-yellow-600">
                   <Globe className="w-5 h-5 inline-block mr-2" />
                   Visit Us
                 </h3>
@@ -148,7 +147,7 @@ const Contact = () => {
                 </p>
               </div>
               <div className="bg-white rounded-xl shadow-lg p-6">
-                <h3 className="font-semibold mb-3 text-green-600">
+                <h3 className="font-semibold mb-3 text-yellow-600">
                   <Clock className="w-5 h-5 inline-block mr-2" />
                   Shop Hours
                 </h3>
@@ -157,15 +156,15 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Side - Contact Form */}
+          {/* Contact Form */}
           <div className="lg:w-1/2">
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
                 Get in Touch
               </h2>
               {successMessage && (
-                <div className="mb-4 p-4 text-green-700 bg-green-100 border border-green-300 rounded-lg flex items-center">
-                  <CheckCircle className="w-6 h-6 mr-2 text-green-700" />
+                <div className="mb-4 p-4 text-yellow-700 bg-yellow-100 border border-yellow-300 rounded-lg flex items-center">
+                  <CheckCircle className="w-6 h-6 mr-2 text-yellow-700" />
                   {successMessage}
                 </div>
               )}
@@ -180,7 +179,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                       placeholder="John Doe"
                       required
                     />
@@ -195,7 +194,7 @@ const Contact = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                       placeholder="john@example.com"
                       required
                     />
@@ -210,7 +209,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="4"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                       placeholder="How can we help you?"
                       required
                     />
@@ -219,7 +218,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors font-semibold flex items-center justify-center"
+                  className="w-full bg-yellow-600 text-white py-3 px-6 rounded-lg hover:bg-yellow-700 transition-colors font-semibold flex items-center justify-center"
                 >
                   Send Message
                   <Send className="w-5 h-5 ml-2" />
@@ -228,6 +227,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+        {/* Orgs */}
         <div className="space-y-6 md:py-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Our Programmes
@@ -236,14 +237,14 @@ const Contact = () => {
             {organizations.map((org) => (
               <div
                 key={org.id}
-                className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500 hover:shadow-xl transition-shadow"
+                className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-500 hover:shadow-xl transition-shadow"
               >
-                <h3 className="text-xl font-bold text-green-600 mb-4">
+                <h3 className="text-xl font-bold text-yellow-600 mb-4">
                   {org.name}
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-2">
-                    <MapPin className="w-5 h-5 text-green-600 mt-1" />
+                    <MapPin className="w-5 h-5 text-yellow-600 mt-1" />
                     <div className="text-gray-600">
                       {org.location.map((line, index) => (
                         <p key={index}>{line}</p>
@@ -251,7 +252,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Phone className="w-5 h-5 text-green-600" />
+                    <Phone className="w-5 h-5 text-yellow-600" />
                     <a
                       href={`tel:${org.phone}`}
                       className="text-gray-600 hover:text-gray-900"
@@ -260,7 +261,7 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Mail className="w-5 h-5 text-green-600" />
+                    <Mail className="w-5 h-5 text-yellow-600" />
                     <a
                       href={`mailto:${org.email}`}
                       className="text-gray-600 hover:text-gray-900"
@@ -269,16 +270,16 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-5 h-5 text-green-600" />
+                    <Clock className="w-5 h-5 text-yellow-600" />
                     <p className="text-gray-600">Open {org.hours}</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Globe className="w-5 h-5 text-green-600" />
+                    <Globe className="w-5 h-5 text-yellow-600" />
                     <a
                       href={org.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-green-600 hover:underline"
+                      className="text-yellow-600 hover:underline"
                     >
                       Visit Website
                     </a>
