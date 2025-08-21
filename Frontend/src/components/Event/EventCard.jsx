@@ -47,7 +47,7 @@ const EventCard = ({ event }) => {
     }
     
     return (
-      <span className="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+      <span className="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-white-800">
         Seats Available
       </span>
     );

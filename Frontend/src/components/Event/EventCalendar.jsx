@@ -42,7 +42,7 @@ const EventCalendar = ({ events, onSelectEvent }) => {
         </span>
         <button
           onClick={() => onNavigate('TODAY')}
-          className="px-4 py-1.5 rounded-lg bg-green-600 text-white hover:bg-green-700"
+          className="px-4 py-1.5 rounded-lg bg-green-600 text-white hover:bg-yellow-700"
         >
           Today
         </button>
@@ -54,7 +54,7 @@ const EventCalendar = ({ events, onSelectEvent }) => {
             onClick={() => onView(v)}
             className={`px-4 py-1.5 rounded-lg capitalize ${
               view === v 
-                ? 'bg-green-600 text-white' 
+                ? 'bg-yellow-600 text-white' 
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -84,7 +84,7 @@ const EventCalendar = ({ events, onSelectEvent }) => {
         components={{
           toolbar: CustomToolbar,
           event: ({ event }) => (
-            <div className="hover:bg-green-50 transition-colors">
+            <div className="hover:bg-yellow-50 transition-colors">
               {event.title}
             </div>
           ),

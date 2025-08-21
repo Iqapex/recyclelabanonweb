@@ -53,7 +53,7 @@ const Team = () => {
                 View Open Positions
               </button>
             </div>
-            <div className="bg-green-50 p-8 rounded-lg transition-transform duration-300 hover:-translate-y-1">
+            <div className="bg-yellow-50 p-8 rounded-lg transition-transform duration-300 hover:-translate-y-1">
               <h3 className="text-xl font-bold text-yellow-800 mb-4">Volunteer With Us</h3>
               <p className="text-gray-700 mb-6">Contribute your time and skills to make a difference.</p>
               <button 

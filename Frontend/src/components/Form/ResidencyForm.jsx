@@ -85,7 +85,7 @@ const ResidencyForm = ({ program, onSuccess }) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 disabled:bg-gray-400"
+          className="w-full bg-yellow-600 text-white py-2 px-4 rounded-md hover:bg-yellow-700 disabled:bg-gray-400"
         >
           {isSubmitting ? 'Submitting...' : 'Submit Application'}
         </button>

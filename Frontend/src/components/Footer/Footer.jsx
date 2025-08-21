@@ -49,7 +49,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/recyclelebanon/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-green-600 transition-colors"
+              className="text-gray-500 hover:text-yellow-600 transition-colors"
             >
               <Linkedin className="h-6 w-6" />
             </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                 <li key={index}>
                   <button
                     onClick={() => navigate(link.path)}
-                    className="text-gray-600 hover:text-green-600 transition-colors"
+                    className="text-gray-600 hover:text-yellow-600 transition-colors"
                   >
                     {link.name}
                   </button>
@@ -94,25 +94,25 @@ const Footer = () => {
             <h3 className="font-semibold text-gray-900 mb-4">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-green-600 mt-1" />
+                <MapPin className="h-5 w-5 text-yellow-600 mt-1" />
                 <p className="text-gray-600">
                   Saint Louise Street, Kehdy Building, Fassouh, Beirut, Lebanon
                 </p>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-green-600" />
+                <Mail className="h-5 w-5 text-yellow-600" />
                 <a
                   href="mailto:contact@recyclelebanon.org"
-                  className="text-gray-600 hover:text-green-600 transition-colors"
+                  className="text-gray-600 hover:text-yellow-600 transition-colors"
                 >
                   contact@recyclelebanon.org
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-green-600" />
+                <Phone className="h-5 w-5 text-yellow-600" />
                 <a
                   href="tel:+96171131115"
-                  className="text-gray-600 hover:text-green-600 transition-colors"
+                  className="text-gray-600 hover:text-yellow-600 transition-colors"
                 >
                   +961 71 131 115
                 </a>

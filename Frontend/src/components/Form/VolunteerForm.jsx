@@ -61,7 +61,7 @@ const VolunteerForm = ({ onSuccess }) => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
         </div>
         <div>
@@ -72,7 +72,7 @@ const VolunteerForm = ({ onSuccess }) => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
         </div>
         <div>
@@ -82,7 +82,7 @@ const VolunteerForm = ({ onSuccess }) => {
             required
             value={formData.availability}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           >
             <option value="">Select Availability</option>
             <option value="weekdays">Weekdays</option>
@@ -97,7 +97,7 @@ const VolunteerForm = ({ onSuccess }) => {
             required
             value={formData.interest}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           >
             <option value="">Select Interest</option>
             <option value="Tree Planting Initiative">Tree Planting Initiative</option>
@@ -112,14 +112,14 @@ const VolunteerForm = ({ onSuccess }) => {
             required
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
             rows={4}
           />
         </div>
       </div>
       <button
         type="submit"
-        className="w-full bg-green-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors"
+        className="w-full bg-yellow-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-yellow-700 transition-colors"
       >
         Submit Application
       </button>

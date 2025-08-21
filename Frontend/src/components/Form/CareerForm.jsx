@@ -56,7 +56,7 @@ const CareerForm = ({ onSuccess }) => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
         </div>
         <div>
@@ -67,7 +67,7 @@ const CareerForm = ({ onSuccess }) => {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
         </div>
         <div>
@@ -77,7 +77,7 @@ const CareerForm = ({ onSuccess }) => {
             required
             value={formData.position}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           >
             <option value="">Select Position</option>
             <option value="Environmental Project Manager">Environmental Project Manager</option>
