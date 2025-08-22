@@ -40,7 +40,7 @@ function Blogs() {
         Error loading blogs: {error}
         <button 
           onClick={refreshBlogs}
-          className="ml-4 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="ml-4 px-3 py-1 bg-blue-500 text-white rounded hover:bg-yellow-600"
         >
           Retry
         </button>

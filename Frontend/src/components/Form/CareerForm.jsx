@@ -93,7 +93,7 @@ const CareerForm = ({ onSuccess }) => {
             required
             onChange={handleChange}
             accept=".pdf,.doc,.docx"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
           />
         </div>
         <div className="col-span-full">
@@ -103,14 +103,14 @@ const CareerForm = ({ onSuccess }) => {
             required
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
             rows={4}
           />
         </div>
       </div>
       <button
         type="submit"
-        className="w-full bg-green-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors"
+        className="w-full bg-yellow-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-yellow-700 transition-colors"
       >
         Submit Application
       </button>

@@ -61,7 +61,7 @@ function EditEvent() {
         <div className="mt-4">
           <Link
             to="/admin/events"
-            className="inline-flex items-center text-blue-600 hover:text-blue-800"
+            className="inline-flex items-center text-white-600 hover:text-yellow-800"
           >
             <ArrowLeft size={16} className="mr-1" />
             Back to Events
@@ -76,7 +76,7 @@ function EditEvent() {
       <div className="mb-6">
         <Link
           to="/admin/events"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800"
+          className="inline-flex items-center text-blue-600 hover:text-yellow-800"
         >
           <ArrowLeft size={16} className="mr-1" />
           Back to Events

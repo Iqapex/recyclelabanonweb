@@ -229,7 +229,7 @@ function EditTeam() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 disabled:bg-green-300"
+            className="px-4 py-2 bg-yellow-600 text-white rounded-md hover:bg-yellow-700 disabled:bg-yellow-300"
           >
             {isSubmitting ? 'Saving...' : 'Update Team Member'}
           </button>

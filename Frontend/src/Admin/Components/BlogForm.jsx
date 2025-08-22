@@ -55,7 +55,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           value={formData.title}
           onChange={handleChange}
           required
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
       </div>
       
@@ -70,7 +70,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           value={formData.category}
           onChange={handleChange}
           required
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
       </div>
       
@@ -85,7 +85,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           value={formData.author}
           onChange={handleChange}
           required
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
       </div>
       
@@ -100,7 +100,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           onChange={handleChange}
           required
           rows="2"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         ></textarea>
       </div>
       
@@ -115,7 +115,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           onChange={handleChange}
           required
           rows="10"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         ></textarea>
       </div>
       
@@ -128,7 +128,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           id="coverImage"
           name="coverImage"
           onChange={handleFileChange}
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
         {typeof formData.coverImage === 'string' && formData.coverImage && (
           <div className="mt-2">
@@ -153,7 +153,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           value={formData.videoUrl}
           onChange={handleChange}
           placeholder="https://www.youtube.com/embed/VIDEO_ID"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
       </div>
       
@@ -168,7 +168,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
           value={formData.tags}
           onChange={handleChange}
           placeholder="React, JavaScript, Web Development"
-          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
         />
       </div>
       
@@ -182,7 +182,7 @@ const BlogForm = ({ initialData, onSubmit, onCancel }) => {
         </button>
         <button
           type="submit"
-          className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+          className="px-6 py-2 bg-yellow-600 text-white rounded hover:bg-blue-700 transition-colors"
         >
           Submit
         </button>
